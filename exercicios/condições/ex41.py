@@ -6,9 +6,11 @@
 # – Acima de 25 anos: MASTER
 from time import sleep
 from datetime import date
+
 data = date.today().year
 nascimento = int(input('Digite sua data de nascimento: '))
 idade = data - nascimento
+
 if idade <= 9:
     print('Com base na sua idade de {} anos, sua catégoria é MIRIM!'.format(idade))
     categoria = 9 - idade
